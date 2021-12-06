@@ -1,0 +1,31 @@
+﻿<Window x:Class="Blackjack.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Blackjack"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="backgroundblackjack.jpg"/>
+        </Grid.Background>
+        <Label x:Name="valuelabel" Content="" HorizontalAlignment="Left" Height="157" Margin="10,10,0,0" VerticalAlignment="Top" Width="439" FontFamily="Verdana Pro Black" FontSize="16" Foreground="White"/>
+        <Button x:Name="karteaufnehmenbut" Content="Karte aufnehmen" HorizontalAlignment="Left" Height="47" Margin="157,245,0,0" VerticalAlignment="Top" Width="133" Click="karteaufnehmenbut_Click" Background="#FF4CB8F5" BorderBrush="#FF106E37">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="passenbut" Content="passen" HorizontalAlignment="Left" Height="47" Margin="311,245,0,0" VerticalAlignment="Top" Width="138" Click="passenbut_Click" BorderBrush="#FF12753A" Background="#FF7FE496">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="spielerwechsel" Content="Spiel beginnen" HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Top" Width="772" FontSize="36" Background="#FF801E1E" BorderBrush="#FF2B9B1A" Click="spielerwechsel_Click"></Button>
+
+    </Grid>
+</Window>
